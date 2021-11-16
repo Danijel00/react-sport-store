@@ -1,0 +1,84 @@
+/*
+=====================
+Facility section styling 
+=====================
+*/
+
+.facility-section {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.facility-section p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.facility-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 980px){
+    .facility-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .facility-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.facility-img_container {
+    position: relative;
+    display: inline-block;
+    line-height: 7.5rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1.5px solid #000;
+    z-index: 1;
+    margin-bottom: 1.6rem;
+}
+
+.facility-img_container::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0.7rem;
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    z-index: -1;
+}
+
+.facility-img_container svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: 1s;
+    perspective: 4000;
+}
+
+.facility-box {
+    text-align: center;
+    margin: 0 40px;
+}
+
+@media screen and (max-width: 980px) {
+    .facility-box {
+        text-align: center;
+        margin: 40px 40px;
+    }
+}
+
+.facility-box:hover svg {
+    transform: rotateZ(360deg);
+}

@@ -1,0 +1,76 @@
+.brands .small-container{
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.social-media svg{
+    width: 35px;
+    height: 35px;
+    border-radius: 20%;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 520px){
+    .social-media svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.social-media svg:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transform: translateY(-10px);
+}
+
+.row .col-5{
+    background-color: #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 25px 30px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 520px) {
+    .row .col-5 {
+        padding: 15px 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .row .col-5 {
+        padding: 10px 15px;
+    }
+}
+
+.social-media .fb{
+    background: #3a7bd5;
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+    color: #fff;
+}
+
+.social-media .ig{
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 20%;
+}
+
+.social-media .tw{
+    background:linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa8f);
+    color: #fff;
+    border-radius: 20%;
+} 
+
+.social-media .yt{
+    background: #FF0000;
+    color: #fff;
+}
+
+.social-media .li{
+    background: #0077b5;
+    color: #fff;
+}

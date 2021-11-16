@@ -1,0 +1,22 @@
+.col-4 h4 {
+    color: #555;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.col-4 p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.product {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}

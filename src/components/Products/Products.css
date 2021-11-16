@@ -1,0 +1,72 @@
+/*
+===========================
+Products data styling
+===========================
+*/
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 15px;
+  min-width: 270px;
+  margin-bottom: 50px;
+  transition: transform 0.5s ease;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.products {
+  background-color: #fff;
+}
+
+.small-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating svg {
+  fill: orangered;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.title:after {
+  content: "";
+  background-color: crimson;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+

@@ -1,0 +1,186 @@
+/*
+=====================
+Offer section styling
+=====================
+*/
+
+.offer {
+    background-color: #f6d327;
+    background-image: linear-gradient(315deg, #f6d327 0%, #de4daa 74%);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.small-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 960px){
+    .col-2 {
+        flex-basis: 100%;
+    }
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 60px 0;
+    margin-top: 250px;
+}
+
+.small-container{
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.offer .offer-image {
+    height: 600px;
+    width: 100%;
+    background-image: url("../../images/sunglasses-change/nike-sunglasses1.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 1s ease;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url("../../images/sunglasses-change/nike-sunglasses1.jpg");
+    }
+
+    25% {
+        background-image: url("../../images/sunglasses-change/nike-sunglasses2.jpg");
+    }
+
+    50% {
+        background-image: url("../../images/sunglasses-change/nike-sunglasses3.jpg");
+    }
+
+    75% {
+        background-image: url("../../images/sunglasses-change/nike-sunglasses4.jpg");
+    }
+
+    100% {
+        background-image: url("../../images/sunglasses-change/nike-sunglasses5.jpg");
+    }
+}
+
+@media screen and (max-width: 960px){
+    .offer .offer-image {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .offer .offer-image {
+        height: 200px;
+    }
+}
+
+.offer .col-2 p {
+    color: #36454F;
+    font-weight: 600;
+}
+
+/* @media screen and (max-width: ) */
+
+.offer .col-2 small {
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+@media screen and (max-width: 300px) {
+    .offer .col-2 small {
+        color: #fff;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+.offer .small-container .col-2 {
+    margin-top: 30px;
+}
+
+.offer .offer-btn {
+    padding: 8px 30px;
+    background: #000;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid #fff;
+    display: flex;
+    width: fit-content;
+    margin-top: 30px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.offer .offer-btn:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.col-2 h1 {
+    font-size: 45px;
+    line-height: 70px;
+    margin: 35px 0;
+    color: #fff;
+}
+
+@media screen and (max-width: 300px) {
+    .col-2 h1 {
+        font-size: 25px;
+        line-height: 50px;
+        margin: 25px 0;
+        color: #fff;
+    }
+}
+
+
+.col-2 p {
+    color: lightgray;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.col-2 .btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 30px 0;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.col-2 .btn:hover {
+    background-color: transparent;
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+}
